@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 Student Attendance Dashboard
 
-## Getting Started
+A full-featured student attendance management system built using **Next.js**, **Tailwind CSS**, **Drizzle ORM**, and **PostgreSQL (via Neon)**. This project includes modern UI, robust backend, student record management, and attendance analytics using bar and pie charts.
 
-First, run the development server:
+---
 
+## 📌 Features
+
+- 🔐 Social + Email/Password Authentication
+- 🎨 Responsive UI with Dark Mode using Tailwind CSS
+- 🗃️ PostgreSQL Database integration via Neon and Drizzle ORM
+- ➕ Add, 🗑️ Delete, and ✏️ Manage Student Records
+- 📆 Mark Attendance (Present/Absent) with Date-wise & Monthly Tracking
+- 📊 Interactive Dashboard with Bar & Pie Charts
+- 🧠 Advanced Logic & Clean Codebase
+- 🛠️ Next.js API Route Implementation
+- 📺 Step-by-step Tutorial Covered
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS
+- **Authentication:** NextAuth.js
+- **Database:** PostgreSQL (hosted on [Neon](https://neon.tech))
+- **ORM:** Drizzle ORM
+- **Charts:** Chart.js / Recharts
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/attendance-dashboard.git
+cd attendance-dashboard
+```
+
+### 2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+### 3. Configure environment variables
+Copy the example file and fill in your credentials:
+```bash
+cp .env.example .env.local
+```
+Edit .env.local and add your keys from Kinde, and PostgreSQL (Neon):
+```bash
+# Kinde Auth
+KINDE_CLIENT_ID=your_kinde_client_id
+KINDE_CLIENT_SECRET=your_kinde_client_secret
+KINDE_ISSUER_URL=your_kinde_issuer_url
+KINDE_SITE_URL=your_kinde_site_url
+KINDE_POST_LOGOUT_REDIRECT_URL=your_post_logout_redirect_url
+KINDE_POST_LOGIN_REDIRECT_URL=your_post_login_redirect_url
+
+# PostgreSQL (Neon)
+DB_HOST=your_db_host
+DB_PORT=your_db_port
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+DB_NAME=your_db_name
+DATABASE_URL=your_full_database_url
+```
+
+### 4. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📤 Deployment
+This project is optimized for deployment on Vercel.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
+### Contributions are welcome! Follow these steps:
 
-## Learn More
+Fork the repository
+Create a new branch (git checkout -b feature/your-feature)
+Commit your changes (git commit -m 'Add new feature')
+Push to the branch (git push origin feature/your-feature)
+Open a Pull Request
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🙌 Acknowledgements
+- Kinde
+- Recharts
+- NeonDB
+- Vercel
