@@ -7,7 +7,7 @@ A full-featured student attendance management system built using **Next.js**, **
 ## 🔗 Live Demo
 
 <p>
-  <a href="https://google-docs-clone-pied.vercel.app/" target="_blank">
+  <a href="https://student-attendance-dashboard.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Live%20App-Google%20Docs%20Clone-blueviolet?style=for-the-badge&logo=vercel&logoColor=white" alt="Live App Badge" />
   </a>
 </p>
